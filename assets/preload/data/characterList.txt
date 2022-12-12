@@ -24,3 +24,12 @@ pico-speaker
 bf-holding-gf
 pico-player
 tankman-player
+iza
+izadjtiktok
+izaparty
+izaswag
+izasmug
+izafake
+serialkiller
+serialkillergod
+playableiza
