@@ -81,6 +81,11 @@ class CreditsState extends MusicBeatState
 		#end
 
 		var pisspoop:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
+                        ['Mod Credits'],
+                        ['LG64', 'levi', 'Hi I'm creating everything in this mod and ported into android', 'https://youtube.com/@LG64TUBE', 'FFFFFF'],
+                        ['LUMINE', 'nothing', 'Gacha Club Download For Android Now, Click Here', 'https://play.google.com/store/apps/details?id=air.com.lunime.gachaclub', 'FFFFFF'],
+                        ['LARA'S HORROR SOUNDS', 'nothing', 'For Iza talking and scary laugh, Featuring By Lara Sluyter', 'https://youtube.com/@LARASHORRORSOUNDS', 'FFFFFF'],
+                        ['INSEMINOID CLIP', 'nothing', 'For Iza Screaming', 'https://youtu.be/JwC7QAFrJHs', 'FFFFFF'],
                         ['Psych Engine Android Port'],
                         ['idklool (or Boyfriend FNF idc)', 'nothing', 'Hi I ported the Psych Engine', 'youtube.com/c/BoyfriendFNF', 'FFFFFF'],
                         ['Dxgamer', 'dxgamer', 'Coder Help', 'https://youtube.com/c/Dxgamer7405', 'FFFFFF'],
