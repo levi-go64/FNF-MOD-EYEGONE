@@ -1,36 +1,16 @@
-
-local y = 50
-local t = 0
--- stolen from bbpanzu lol -Uhard
-local u = false;
-local r = 0;
-local shot = false;
-local agent = 1
-local health = 0;
 local xx = 420.95;
-local yy = 420;
-local xx2 = 732.9;
-local yy2 = 450;
-local ofs = 75;
+local yy = 513;
+local xx2 = 952.9;
+local yy2 = 550;
+local ofs = 60;
 local followchars = true;
 local del = 0;
 local del2 = 0;
-local drain = 0.01 -- the funne
-local allowCountdown = false
-function onStartCountdown()
-	if not allowCountdown and isStoryMode and not seenCutscene then --Block the first countdown
-			startVideo('IDK HOW TO DELETED IT TO WORK LOL');
-		
-		
-		allowCountdown = true;
-		return Function_Stop;
-	end
-	return Function_Continue;
-end
+
 function onUpdate()
-	if followchars == true then
+    if followchars == true then
         if mustHitSection == false then
-            --setProperty('defaultCamZoom',0.7)
+            setProperty('defaultCamZoom',0.8)
             if getProperty('dad.animation.curAnim.name') == 'singLEFT' then
                 triggerEvent('Camera Follow Pos',xx-ofs,yy)
             end
@@ -61,9 +41,11 @@ function onUpdate()
             if getProperty('dad.animation.curAnim.name') == 'idle' then
                 triggerEvent('Camera Follow Pos',xx,yy)
             end
+            if getProperty('dad.animation.curAnim.name') == 'hey' then
+                triggerEvent('Camera Follow Pos',xx - 130,yy)
+            end
         else
-
-            --setProperty('defaultCamZoom',0.7)
+            setProperty('defaultCamZoom',1.0)
             if getProperty('boyfriend.animation.curAnim.name') == 'singLEFT' then
                 triggerEvent('Camera Follow Pos',xx2-ofs,yy2)
             end
@@ -86,22 +68,4 @@ function onUpdate()
     else
         triggerEvent('Camera Follow Pos','','')
     end
-end
-function onStepHit() -- VINE BOOM
-    --[[if curStep == 16 or curStep == 20 or curStep == 24 or curStep == 26 or curStep == 28 or curStep == 30 or curStep == 1197 or curStep == 1199 or curStep == 1201  or curStep >= 1202 and curStep < 1212 then
-        setProperty('camGame.zoom',1.6)
-        setProperty('camHUD.zoom',1.7)
-        cameraShake('camGame',0.01,0.1)
-        cameraShake('camHUD',0.02,0.1)
-        characterPlayAnim('boyfriend','scared',true)
-        characterPlayAnim('gf','scared',true)
-        doTweenZoom('vineboom0','camGame',1,crochet*0.002,'circOut')
-        doTweenZoom('vineboom1','camHUD',1,crochet*0.0016,'circOut')
-    end]]
-end
-function onBeatHit() -- oohhh mah gawwwd
---[[if curBeat == 68 or curBeat == 220 or curBeat == 228 or curBeat == 236 or curBeat == 244 or curBeat == 248 or curBeat == 252 or curBeat == 256 or curBeat == 260  or curBeat == 264 or curBeat == 268 or curBeat == 272 or curBeat == 276 or curBeat == 280 then
-     cameraShake('camGame',0.015,1.2)
-        cameraShake('camHUD',0.03,1.2)
-end]]
 end
