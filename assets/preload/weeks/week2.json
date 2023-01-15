@@ -2,10 +2,19 @@
 	"songs": [
 		[
 			"faker",
-			"iza",
+			"izafake",
 			[
 				255,
-				140,
+				100,
+				0
+			]
+		],
+		[
+			"sliced",
+			"serialkiller",
+			[
+				255,
+				100,
 				0
 			]
 		]
@@ -15,12 +24,12 @@
 	"weekBackground": "stage",
 	"difficulties": "",
 	"weekCharacters": [
-		"",
-		"",
-		""
+		"dad",
+		"bf",
+		"gf"
 	],
-	"storyName": "Your New Week",
-	"weekName": "EYEGONE WEEK",
+	"storyName": "bonus",
+	"weekName": "Custom Week",
 	"freeplayColor": [
 		146,
 		113,
